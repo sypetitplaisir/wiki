@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="PU_WIKI" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+		<class>com.formation.wiki.entity.Article</class>
+		<class>com.formation.wiki.entity.Commentaire</class>
+		<class>com.formation.wiki.entity.Role</class>
+		<class>com.formation.wiki.entity.Statut</class>
+		<class>com.formation.wiki.entity.Utilisateur</class>
+        <properties>
+
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/wiki1"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+
+            <!--Hibernate properties-->
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
+
+
