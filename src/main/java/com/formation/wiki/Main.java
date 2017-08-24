@@ -34,6 +34,8 @@ public class Main {
 
 		testUtilisateur();
 		
+		//test Git  
+		
 		/*
 		 * if (UtilisateurDAO.isUserExist("toto5","1234")) {
 		 * System.out.println("UserExist"); } else {
